@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Milkyway';
+    src: url('../fonts/Milkyway\ DEMO.ttf') format('truetype');
+}
+
+body {
+    background-color: #9a6fbf;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d8b4f8 0%, #ffffff 100%);
+    font-family: "Dancing Script";
+    font-family: 'Milkyway', sans-serif;
+}
+
+h1 {
+    font-weight: 500;
+    color: #1a0129;
+    font-size: 70px;
+}
+
+p {
+    color: #1a0129;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.actions,
+.typing {
+    gap: 15px;
+}
+
+.actions button {
+    padding: 8px 16px;
+    font-size: 30px;
+    background-color: #914983;
+    color: #fff;
+    border-radius: 35px;
+}
+
+.actions button:hover {
+    background-color: #8d6585;
+    color: #fff;
+}
+
+.grid-container {
+    grid-gap: 16px;
+    grid-template-columns: repeat(4, 65px);
+    grid-template-rows: repeat(4, calc(65px / 2 * 3));
+}
+
+.card {
+    height: calc(65px / 2 * 3);
+    width: 65px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+}
+
+.front-image {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #333;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .back {
+    background-image: url("../images/game.jfif");
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+}
+
+.card .front {
+    transform: rotateY(180deg);
+}
+.my-animation {
+    animation-duration: 5s; 
+  }

@@ -1,0 +1,34 @@
+[
+    {
+        "icon": "fa-solid fa-spa",
+        "name": "spade"
+    },
+    {
+        "icon": "fa-solid fa-cubes",
+        "name": "club"
+    },
+    {
+        "icon": "fa-solid fa-heart",
+        "name": "heart"
+    },
+    {
+        "icon": "fa-solid fa-gem",
+        "name": "diamond"
+    },
+    {
+        "icon":"fa-solid fa-star",
+        "name": "star"
+    },
+    {
+        "icon": "fa-solid fa-sun",
+        "name": "sun"
+    },
+    {
+        "icon": "fa-solid fa-moon",
+        "name": "moon"
+    },
+    {
+        "icon": "fa-solid fa-umbrella",
+        "name": "umbrella"
+    }
+]
